@@ -1,0 +1,247 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* ここまでリセットCSS */
+
+body {
+    background-color: #f0f0f0;
+    font-family:'Dosis', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", cursive;
+}
+
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+h1{
+    font-size: 50px;
+    line-height: 50px;
+}
+h2 {
+    font-size: 40px;
+    padding-bottom: 20px;
+    color: #cacaca;
+}
+h1:hover,h2:hover {
+    color: #33e622;
+    transition: 0.5s;
+}
+h3 {
+    font-size: 30px;
+    line-height: 40px;
+}
+/* ここからヘッダー */
+
+header {
+    height: 664px;
+    text-align: center;
+    background: linear-gradient(to right,#0d1ca3, #0b003dfd);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #cacaca;
+}
+.name p {
+    font-size: 24px;
+    padding-top: 6px;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* ここからトップコンテナ */
+main {
+    background-color: #f0f0f0;
+}
+main p{
+    padding-bottom: 10px;
+}
+.top-container {
+    height: 200px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+/* ここからメインコンテナ */
+
+.main-container {
+    height: 100%;
+    
+}
+.flex-box {
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: auto;
+    margin: 20px auto ;
+    justify-content: space-between;
+    background: linear-gradient(to right,#ffa319, #ff661f);
+    border-radius: 20px;
+    
+}
+@media screen and (min-width: 1000px){
+    .flex-box .item {
+        flex: auto;
+        width: 50%;
+        text-align: center;
+    }
+    .image {
+        display: block;
+    }
+}
+/* メディアクエリ*/
+
+@media(max-width: 1000px) {
+    .flex-box .item {
+        flex: auto;
+        width: 100%;
+        text-align: center;
+    }
+    .image {
+        display: none;
+    }
+}
+.image {
+    padding: 50px 50px;
+}
+.image img {
+    border-radius: 50px;
+}
+.text {
+    padding-left: 40px;
+}
+.text .headeing {
+    margin-bottom: 20px;
+}
+.content {
+    padding: 10px 12px 0 0 ;
+}
+.skill-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* ここからフッター */
+
+footer {
+    padding-top: 20px;
+    text-align: center;
+    background: linear-gradient(to right,#0d1ca3, #0b003dfd);
+    height: 300px;
+    color: #cacaca;
+}
+.icon .far {
+    color: rgb(254, 255, 192);
+    opacity: 0.7;
+
+}
+.icon .far:hover {
+    opacity: 1;
+}
+.icon .far:active {
+    opacity: 0.5;
+}
